@@ -1,0 +1,66 @@
+<h1>Hotel </h1>
+
+<hr>
+
+<div class="row text-right">
+    <div class="col">
+        <button routerLink="/hotels" class="btn btn-danger">
+      Regresar
+  </button>
+    </div>
+
+</div>
+
+<div>
+
+    <div class="col">
+
+        <form (ngSubmit)="save(f)" #f="ngForm">
+
+            <div class="class-form">
+                <label>Id</label>
+                <input type="text" [(ngModel)]="hotel.id" [disabled]="true" name="id" class="form-control">
+            </div>
+
+            <div class="class-form">
+                <label>Nombre</label>
+                <input type="text" [(ngModel)]="hotel.nombre" name="nombre" class="form-control">
+            </div>
+
+            <div class="class-form">
+                <label>Categoria</label>
+                <input type="number" [(ngModel)]="hotel.categoria" name="categoria" class="form-control">
+            </div>
+
+            <div class="class-form">
+                <label>Precio</label>
+                <input type="number" [(ngModel)]="hotel.precio" name="precio" class="form-control">
+            </div>
+
+            <div class="class-form">
+                <label>Direccion</label>
+                <input type="text" [(ngModel)]="hotel.direccion" name="direccion" class="form-control">
+            </div>
+
+            <div class="class-form">
+                <label>Foto</label>
+                <input type="text" [(ngModel)]="hotel.foto" name="foto" class="form-control">
+            </div>
+
+            <hr>
+
+            <div class="form-group text-center">
+
+                <button type="submit" *ngIf="ban" class="btn btn-primary">
+                  Agregar
+              </button>
+                <button type="submit" *ngIf="!ban" class="btn btn-primary">
+                 Editar
+              </button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
