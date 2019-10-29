@@ -1,0 +1,16 @@
+<div class="crop-image">
+    <img [src]="hotel.foto" class="card-img-top" alt="...">
+</div>
+<div class="card-body">
+
+    <h5 class="card-title">{{hotel.nombre}}</h5>
+
+    <small>Categoria: {{hotel.categoria}} </small> <br>
+    <small>Precio: {{hotel.precio}} </small> <br>
+    <small class="card-text">Direccion: {{hotel.direccion}}</small>
+</div>
+<div class="text-center">
+    <a class="btn btn-primary" routerLink="['/home]">
+    Regresar
+    </a>
+</div>

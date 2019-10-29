@@ -4,6 +4,7 @@ import { HotelComponent } from './components/hotel/hotel.component';
 import { HotelsComponent } from './components/hotels/hotels.component';
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
+import { HotelDetailComponent } from './components/hotel-detail/hotel-detail.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,9 @@ const routes: Routes = [
   {
     path: 'hotels', component: HotelsComponent
   },
+  {
+    path: 'hotel-detail/:id', component: HotelDetailComponent
+   },
   {
     path: 'hotel/:id', component: HotelComponent
   },

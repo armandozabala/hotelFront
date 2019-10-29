@@ -11,6 +11,7 @@ import { FormsModule} from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { HotelDetailComponent } from './components/hotel-detail/hotel-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     HotelComponent,
     HomeComponent,
     SearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    HotelDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,9 @@
             <img [src]="hotel.foto" class="card-img-top" alt="...">
         </div>
         <div class="card-body">
-            <h5 class="card-title">{{hotel.nombre}}</h5>
+            <a [routerLink]="['/hotel-detail',hotel.id]">
+                <h5 class="card-title">{{hotel.nombre}}</h5>
+            </a>
             <small>Categoria: {{hotel.categoria}} </small> <br>
             <small>Precio: {{hotel.precio}} </small> <br>
             <small class="card-text">Direccion: {{hotel.direccion}}</small>

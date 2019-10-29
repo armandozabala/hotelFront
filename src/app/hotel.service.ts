@@ -30,6 +30,9 @@ export class HotelService {
   }
 
 
+
+
+
   getHotelByName(name: string){
     return this.http.get<Hotel[]>(`${environment.api_url}/hotel/${name}`);
   }

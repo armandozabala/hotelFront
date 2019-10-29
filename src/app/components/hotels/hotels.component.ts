@@ -20,9 +20,13 @@ export class HotelsComponent implements OnInit {
 
   deleteHotel(id: any, i: number){
 
-    this.hotels.splice(i, 1);
+    if(confirm("Are you sure to delete this hotel ")) {
+      this.hotels.splice(i, 1);
 
-    this.hotelservice.deleteHotel(id).subscribe();
+      this.hotelservice.deleteHotel(id).subscribe();
+    }
+
+
   }
 
 }

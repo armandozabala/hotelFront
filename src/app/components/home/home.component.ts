@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HotelService } from 'src/app/hotel.service';
+import { Hotel } from 'src/app/hotel.model';
 
 @Component({
   selector: 'app-home',
