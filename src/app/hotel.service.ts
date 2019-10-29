@@ -29,13 +29,18 @@ export class HotelService {
     return this.http.get<Hotel>(`${environment.api_url}/${id}`);
   }
 
+
+  getHotelByName(name: string){
+    return this.http.get<Hotel[]>(`${environment.api_url}/hotel/${name}`);
+  }
+
   createHotel(hotel: Hotel){
     console.log(hotel);
     return this.http.post(`${environment.api_url}`, hotel);
   }
 
   updateHotel(id: string, changes: Partial<Hotel>){
-    return this.http.put(`${environment.api_url}/hotel/${id}`, changes);
+    return this.http.put(`${environment.api_url}/hot/${id}`, changes);
   }
 
 

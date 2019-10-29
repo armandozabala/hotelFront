@@ -1,5 +1,25 @@
 <div class="row">
+
     <div class="col">
-        <input type="text" #termino (keyup)="buscar(termino.value)" class="form-control" placeholder="Buscar..">
+
+        <div class="row">
+            <p>Buscador por nombre</p>
+        </div>
+        <input type="text" #termino (keyup)="buscar(termino.value)" class="form-control" placeholder="Buscar por nombre..">
     </div>
+</div>
+<br>
+<div class="card-columns">
+
+    <div *ngFor="let hotel of hotels; let i = index" class="card">
+        <div class="crop-image">
+            <img [src]="hotel.foto" class="card-img-top" alt="...">
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">{{hotel.nombre}}</h5>
+            <p class="card-text">{{hotel.direccion}}</p>
+        </div>
+    </div>
+
 </div>
