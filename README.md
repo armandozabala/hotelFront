@@ -2,9 +2,9 @@
 
 Hotel
 
-Responsive Design
-Search and Filter
-List
-CRUD Hotel
+-Responsive Design
+-Search and Filter
+-List
+-CRUD Hotel
 
 start:  ng serve -o
