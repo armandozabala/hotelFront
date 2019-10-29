@@ -1,10 +1,12 @@
 # FrontendHotel - Angular 7
 
-Hotel
+Hotel <br />
 
--Responsive Design
--Search and Filter
--List
--CRUD Hotel
+-Responsive Design <br />
+-Search and Filter <br />
+-List <br />
+-CRUD Hotel <br />
 
-start:  ng serve -o
+start:  <br /> 
+
+ng serve -o
